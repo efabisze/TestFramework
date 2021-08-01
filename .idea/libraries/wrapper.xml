@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="wrapper">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/wrapper" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$USER_HOME$/.gradle/wrapper" recursive="false" />
+  </library>
+</component>

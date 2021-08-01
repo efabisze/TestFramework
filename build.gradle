@@ -1,0 +1,83 @@
+//apply plugin: 'maven'
+apply plugin: 'java'
+apply plugin: 'idea'
+/*
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+group = "com.booker"
+version = '1.0'
+*/
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+  /*  compile(
+            ['org.seleniumhq.selenium:selenium-java:3.8.1'],
+            ['org.testng:testng:7.4.0'],
+            ['org.jetbrains:annotations:15.0']//,
+           // ['org.json:json:20180813'],
+    )*/
+    implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
+ //   implementation 'org.seleniumhq.selenium:selenium-chrome-driver:92.0.4515.43'
+    implementation 'org.testng:testng:7.4.0'
+implementation 'com.googlecode.json-simple:json-simple:1.1.1'
+    //compile 'org.jetbrains:annotations:15.0'
+implementation 'org.json:json:20210307'
+}
+
+test {
+    useTestNG(){
+   /*     println("Selenium Grid URL: $hubHost")
+        println("Test environment: $baseUrl")
+        println("Test plan in TestRail that will be updated during test execution: $testPlan")
+        println("Test run in TestRail that will be updated during test execution: $testRun")
+        println("Tests group to be run: $groups")
+        println("Thread count number: $thread")
+        println("Test type to be executed: $type")
+        println("Test browser: $browser")
+        println("Use retry mechanism: $retryCount")
+        println("Execute scripts for processor/s: $processor")
+        println("CF2 instance is: $cf2Instance")
+        println("Is BrowserProxy enabled: $browserProxy")
+        println("API Environment: $apiEnvironment")
+        println("Availability Endpoint: $apiAvailabilityEndpoint")
+        systemProperty('selenium.baseUrl', "$baseUrl")
+        systemProperty('testrail.test.plan', "$testPlan")
+        systemProperty('testrail.test.run', "$testRun")
+        systemProperty('hub.host', "$hubHost")
+        systemProperty('groups', "$groups")
+        systemProperty('thread', "$thread")
+        systemProperty('type', "$type")
+        systemProperty('retryCount', "$retryCount")
+        systemProperty('updateDB', "0")
+        systemProperty('selenium.browser', "$browser")
+        systemProperty('execute.scripts', "$executeScripts")
+        systemProperty('execute.script.for.payment.processor', "$processor")
+        systemProperty('cf2.instance', "$cf2Instance")
+        systemProperty('browserProxy', "$browserProxy")
+        systemProperty('api.environment', "$apiEnvironment")
+        systemProperty('api.availability.endpoint', "$apiAvailabilityEndpoint")
+        systemProperties "org.uncommons.reportng.stylesheet": "${projectDir}/resources/hudsonesque.css"
+        systemProperties "org.uncommons.reportng.title": "$groups" + " Results"
+        includeGroups "$groups"
+        parallel 'methods'
+        threadCount Integer.parseInt("$thread")
+        useDefaultListeners true
+        setListeners new HashSet<String>(Arrays.asList('com.booker.framework.adapters.BookerAnnotationTransformer'))
+        */
+    }
+
+   // include "**/testcases/$type/**"
+ //   ext.workingDirectory = 'build/'
+ //  ext.reportsDirectory = "${projectDir}/../reports"
+
+ //   afterTest { desc, result ->
+  //      println "Test ${desc.name} [${desc.className}] completed with result: ${result.resultType}"
+  //  }
+
+}
+
+wrapper {
+    gradleVersion = '5.1'
+}

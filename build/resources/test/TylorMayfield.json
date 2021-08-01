@@ -1,0 +1,25 @@
+{
+  "ConsumerFirstName": "Tylor",
+  "ConsumerLastName": "Mayfield",
+  "ConsumerGender": "Male",
+  "ConsumerDateOfBirth": "03/24/1993",
+  "ConsumerSocialSecurityNumber": "333445555",
+  "ConsumerAddress": {
+    "ConsumerStreetAddress": "27 Green Mountain Drive",
+    "ConsumerAddressType": "Rent",
+    "ConsumerCity": "South Burlington",
+    "ConsumerState": "VT",
+    "ConsumerZipCode": "05403"
+  },
+  "ConsumerAddiontalDrivers": {
+
+  },
+  "ConsumerInsuranceClaims": {
+    "ConsumerHasClaims": false,
+    "ConsumerNumberOfClaims": 0
+  },
+  "ConsumerMovingViolations": {
+    "ConsumerHasMovingViolations": true,
+    "ConsumerNumberOfClaims": 1
+  }
+}

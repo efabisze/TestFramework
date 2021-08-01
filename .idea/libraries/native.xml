@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="native">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/native" />
+      <root url="file://$USER_HOME$/.gradle/daemon" />
+      <root url="file://$USER_HOME$/.gradle/jdks" />
+      <root url="file://$USER_HOME$/.gradle/notifications" />
+      <root url="file://$USER_HOME$/.gradle/workers" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$USER_HOME$/.gradle/daemon" recursive="false" />
+    <jarDirectory url="file://$USER_HOME$/.gradle/jdks" recursive="false" />
+    <jarDirectory url="file://$USER_HOME$/.gradle/native" recursive="false" />
+    <jarDirectory url="file://$USER_HOME$/.gradle/notifications" recursive="false" />
+    <jarDirectory url="file://$USER_HOME$/.gradle/workers" recursive="false" />
+  </library>
+</component>
